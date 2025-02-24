@@ -2,7 +2,7 @@ import scrapy
 from scraper.items import ScrapyDealsItem
 
 class MpSpider(scrapy.Spider):
-    name = "mp_spider"
+    name = "ml_spider"
     allowed_domains = ["mercadolibre.com.ar"]
     search_terms = ["playstation 5", "xbox series x", "nintendo switch", "smart tv"]
     start_urls = [
