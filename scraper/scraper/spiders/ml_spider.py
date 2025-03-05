@@ -4,7 +4,9 @@ from scraper.items import ScrapyDealsItem
 class MpSpider(scrapy.Spider):
     name = "ml_spider"
     allowed_domains = ["mercadolibre.com.ar"]
-    search_terms = ["playstation 5", "xbox series x", "nintendo switch", "smart tv"]
+    search_terms = ["iphones","macbook","mac","celulares alta gama"]
+
+
     start_urls = [
         "https://listado.mercadolibre.com.ar/{term}".format(term=term) for term in search_terms
     ]

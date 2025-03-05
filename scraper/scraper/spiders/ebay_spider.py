@@ -6,10 +6,8 @@ class EbaySpider(scrapy.Spider):
     name = "ebay_spider"
     allowed_domains = ["ebay.com"]
     search_terms = [
-        "playstation 5", "xbox series x", "nintendo switch", "smart tv", "smartphone",
-        "laptop", "tablet", "headphones", "smartwatch", "camera", "drone",
-        "iphone", "macbook", "ipad", "apple watch", "samsung galaxy"
-    ]
+    "iphones","macbook","mac","celulares alta gama"
+]
     start_urls = [f"https://www.ebay.com/sch/i.html?_nkw={term.replace(' ', '+')}" for term in search_terms]
     
    
